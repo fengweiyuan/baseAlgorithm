@@ -1,22 +1,22 @@
 #include <iostream>
-#include "SortTestHelper.h"
-#include "SelectionSort.h"
-#include "InsertionSort.h"
-#include "MergeSort.h"
-#include "BubbleSort.h"
-#include "quick_sort.h"
-#include "SparseGraph.h"
-#include "DenseGraph.h"
-#include "ReadGraph.h"
+#include "sort_test_helper.h"
+#include "select_sort.h"
+#include "insert_sort.h"
+//#include "MergeSort.h"
+//#include "BubbleSort.h"
+//#include "quick_sort.h"
+//#include "SparseGraph.h"
+//#include "DenseGraph.h"
+//#include "ReadGraph.h"
 using namespace std;
 
 
 int main() {
 
     // 构建测试数组
-//    int n = 100000;
+    int n = 100000;
 //    int* arr = SortTestHelper::generateNearlyOrderedArray(n, 100);
-//    int* arr = SortTestHelper::generateRandomArray(n, 0, n);
+    int* arr = SortTestHelper::generateRandomArray(n, 0, n);
 //    int* arr2 = SortTestHelper::copyIntArray(arr, n);
 //    int* arr3 = SortTestHelper::copyIntArray(arr, n);
 //    int* arr4 = SortTestHelper::copyIntArray(arr, n);
@@ -24,7 +24,7 @@ int main() {
 //    int* arr6 = SortTestHelper::copyIntArray(arr, n);
 
     // 测试算法
-//    SortTestHelper::testSort("Selection Sort", selectionSort, arr, n);
+    SortTestHelper::testSort("Selection Sort", selectionSort, arr, n);
 //    SortTestHelper::testSort("Bubble sort", mergeSort, arr2, n);
 //    SortTestHelper::testSort("Insertion Sort", insertionSort, arr3, n);
 //    SortTestHelper::testSort("insertionSort2", insertionSort2, arr4, n);
@@ -33,7 +33,7 @@ int main() {
 
 
     // 释放内存
-//    delete[] arr;
+    delete[] arr;
 //    delete[] arr2;
 //    delete[] arr3;
 //    delete[] arr4;
@@ -41,7 +41,7 @@ int main() {
 //    delete[] arr6;
 
     // 图的测试
-    cout << "---------------------Graph Test Begin---------------------" <<endl;
+//    cout << "---------------------Graph Test Begin---------------------" <<endl;
 //    int N = 20;          // 顶点
 //    int M = 100;         // 边
 //    srand(time(NULL));
@@ -83,16 +83,16 @@ int main() {
 //        cout << endl;
 //    }
 
-    string filename = "../testG1.txt";
-    ifstream fin;
-    fin.open(filename);
-    SparseGraph g3 (13, false);
-    ReadGraph<SparseGraph> readGraph1(g3, filename.c_str());
-    g3.show();
-
-    DenseGraph g4(13, false);
-    ReadGraph<DenseGraph> readGraph2(g4, filename);
-    g4.show();
+//    string filename = "../testG1.txt";
+//    ifstream fin;
+//    fin.open(filename);
+//    SparseGraph g3 (13, false);
+//    ReadGraph<SparseGraph> readGraph1(g3, filename.c_str());
+//    g3.show();
+//
+//    DenseGraph g4(13, false);
+//    ReadGraph<DenseGraph> readGraph2(g4, filename);
+//    g4.show();
     return 0;
 
 

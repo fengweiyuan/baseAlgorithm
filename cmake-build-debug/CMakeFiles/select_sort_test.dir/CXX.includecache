@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/code/publicGithub/baseAlgorithm/select_sort/select_sort.h
+iostream
+-
+algorithm
+-
+string
+-
+
+D:/code/publicGithub/baseAlgorithm/select_sort/select_sort_test.cpp
+iostream
+-
+../sort_test_helper.h
+D:/code/publicGithub/baseAlgorithm/sort_test_helper.h
+select_sort.h
+D:/code/publicGithub/baseAlgorithm/select_sort/select_sort.h
+
+D:/code/publicGithub/baseAlgorithm/sort_test_helper.h
+iostream
+-
+cassert
+-
+ctime
+-
+string
+-
+string.h
+-
+stdlib.h
+-
+
