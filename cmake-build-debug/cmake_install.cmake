@@ -1,8 +1,8 @@
-# Install script for directory: D:/code/publicGithub/baseAlgorithm
+# Install script for directory: E:/code/publicGithub/baseAlgorithm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/suanfa")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/baseAlgorithm")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,8 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/cmake_install.cmake")
-  include("D:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/cmake_install.cmake")
+  include("E:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/cmake_install.cmake")
+  include("E:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/cmake_install.cmake")
+  include("E:/code/publicGithub/baseAlgorithm/cmake-build-debug/bst/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/code/publicGithub/baseAlgorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/code/publicGithub/baseAlgorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
