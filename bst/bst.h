@@ -210,22 +210,21 @@ public:
      * 之前的前序，中序，后序都属于深度优先遍历
      */
     void levelOrder() {
-        queue<Node*> q;
+        queue<Node *> q;
         q.push(root);
 
         // 只要队列不为空则可以继续
         while (!q.empty()) {
-            Node* node = q.front() {
-                q.pop();
+            Node *node = q.front();
+            q.pop();
 
-                cout << node->key << endl;
+            cout << node->key << endl;
 
-                if (node->left)
-                    q.push(node->left);
-                if (node->right)
-                    q.push(node->right);
+            if (node->left)
+                q.push(node->left);
+            if (node->right)
+                q.push(node->right);
 
-            }
         }
     }
 
