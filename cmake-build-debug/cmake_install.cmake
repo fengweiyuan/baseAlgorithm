@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("D:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/cmake_install.cmake")
   include("D:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/cmake_install.cmake")
+  include("D:/code/publicGithub/baseAlgorithm/cmake-build-debug/binary_search/cmake_install.cmake")
 
 endif()
 

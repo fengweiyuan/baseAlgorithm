@@ -83,7 +83,7 @@ select_sort/preinstall:
 select_sort/CMakeFiles/select_sort_test.dir/all:
 	$(MAKE) -f select_sort\CMakeFiles\select_sort_test.dir\build.make select_sort/CMakeFiles/select_sort_test.dir/depend
 	$(MAKE) -f select_sort\CMakeFiles\select_sort_test.dir\build.make select_sort/CMakeFiles/select_sort_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target select_sort_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target select_sort_test"
 .PHONY : select_sort/CMakeFiles/select_sort_test.dir/all
 
 # Include target in all.
@@ -138,7 +138,7 @@ insert_sort/preinstall:
 insert_sort/CMakeFiles/insert_sort_test.dir/all:
 	$(MAKE) -f insert_sort\CMakeFiles\insert_sort_test.dir\build.make insert_sort/CMakeFiles/insert_sort_test.dir/depend
 	$(MAKE) -f insert_sort\CMakeFiles\insert_sort_test.dir\build.make insert_sort/CMakeFiles/insert_sort_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target insert_sort_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target insert_sort_test"
 .PHONY : insert_sort/CMakeFiles/insert_sort_test.dir/all
 
 # Include target in all.
@@ -165,6 +165,61 @@ insert_sort/CMakeFiles/insert_sort_test.dir/clean:
 
 # clean rule for target.
 clean: insert_sort/CMakeFiles/insert_sort_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory binary_search
+
+# Convenience name for "all" pass in the directory.
+binary_search/all: binary_search/CMakeFiles/binary_search_test.dir/all
+
+.PHONY : binary_search/all
+
+# Convenience name for "clean" pass in the directory.
+binary_search/clean: binary_search/CMakeFiles/binary_search_test.dir/clean
+
+.PHONY : binary_search/clean
+
+# Convenience name for "preinstall" pass in the directory.
+binary_search/preinstall:
+
+.PHONY : binary_search/preinstall
+
+#=============================================================================
+# Target rules for target binary_search/CMakeFiles/binary_search_test.dir
+
+# All Build rule for target.
+binary_search/CMakeFiles/binary_search_test.dir/all:
+	$(MAKE) -f binary_search\CMakeFiles\binary_search_test.dir\build.make binary_search/CMakeFiles/binary_search_test.dir/depend
+	$(MAKE) -f binary_search\CMakeFiles\binary_search_test.dir\build.make binary_search/CMakeFiles/binary_search_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target binary_search_test"
+.PHONY : binary_search/CMakeFiles/binary_search_test.dir/all
+
+# Include target in all.
+all: binary_search/CMakeFiles/binary_search_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+binary_search/CMakeFiles/binary_search_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 binary_search/CMakeFiles/binary_search_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\code\publicGithub\baseAlgorithm\cmake-build-debug\CMakeFiles 0
+.PHONY : binary_search/CMakeFiles/binary_search_test.dir/rule
+
+# Convenience name for target.
+binary_search_test: binary_search/CMakeFiles/binary_search_test.dir/rule
+
+.PHONY : binary_search_test
+
+# clean rule for target.
+binary_search/CMakeFiles/binary_search_test.dir/clean:
+	$(MAKE) -f binary_search\CMakeFiles\binary_search_test.dir\build.make binary_search/CMakeFiles/binary_search_test.dir/clean
+.PHONY : binary_search/CMakeFiles/binary_search_test.dir/clean
+
+# clean rule for target.
+clean: binary_search/CMakeFiles/binary_search_test.dir/clean
 
 .PHONY : clean
 

@@ -4,11 +4,13 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(select_sort)
 add_subdirectory(insert_sort)
+add_subdirectory(binary_search)
 
 
 INCLUDE_DIRECTORIES(
         select_sort
         insert_sort
+        binary_search
 )
 
 #ADD_EXECUTABLE(main main.cpp)

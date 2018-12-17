@@ -135,6 +135,19 @@ insert_sort_test/fast:
 	$(MAKE) -f insert_sort\CMakeFiles\insert_sort_test.dir\build.make insert_sort/CMakeFiles/insert_sort_test.dir/build
 .PHONY : insert_sort_test/fast
 
+#=============================================================================
+# Target rules for targets named binary_search_test
+
+# Build rule for target.
+binary_search_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 binary_search_test
+.PHONY : binary_search_test
+
+# fast build rule for target.
+binary_search_test/fast:
+	$(MAKE) -f binary_search\CMakeFiles\binary_search_test.dir\build.make binary_search/CMakeFiles/binary_search_test.dir/build
+.PHONY : binary_search_test/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -145,6 +158,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... select_sort_test
 	@echo ... insert_sort_test
+	@echo ... binary_search_test
 .PHONY : help
 
 
