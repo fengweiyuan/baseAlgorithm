@@ -2,6 +2,7 @@
 #define BASEALGORITHM_BST_H
 
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -14,8 +15,8 @@ private:
     struct Node {
         Key key;
         Value value;
-        Node* left;
-        Node* right;
+        Node *left;
+        Node *right;
 
         Node(Key key, Value value) {
             this->key = key;
@@ -32,7 +33,7 @@ private:
       * 返回插入新节点后的二叉搜索树的根
       * 递归方式
       */
-    Node* insert(Node *node, Key key, Value value) {
+    Node *insert(Node *node, Key key, Value value) {
 
         if (node == NULL) {
             count++;
@@ -78,7 +79,7 @@ private:
 //    }
 
 
-    bool contain(Node* node, Key key) {
+    bool contain(Node *node, Key key) {
 
         if (node == NULL)
             return false;
@@ -91,7 +92,7 @@ private:
         }
     }
 
-    Value* search(Node* node, Key key) {
+    Value *search(Node *node, Key key) {
         if (node == NULL) {
             return NULL;
         }
@@ -105,6 +106,44 @@ private:
         }
     }
 
+    // 对以node为根的二叉搜索树进行前序遍历
+    void preOrder(Node *node) {
+        if (node != NULL) {
+            cout << node->key << endl;
+            preOrder(node->left);
+            preOrder(node->right);
+        }
+    }
+
+    // 对以node为根的二叉搜索树进行中序遍历
+    void inOrder(Node *node) {
+        if (node != NULL) {
+            inOrder(node->left);
+            cout << node->key << endl;
+            inOrder(node->right);
+        }
+    }
+
+    // 对以node为根的二叉搜索树进行后序遍历
+    void postOrder(Node *node) {
+        if (node != NULL) {
+            postOrder(node->left);
+            postOrder(node->right);
+            cout << node->key << endl;
+        }
+    }
+
+    // 使用后续遍历的方式，来释放二叉搜索树的每个节点
+    void destory(Node *node) {
+        if (node != NULL) {
+            destory(node->left);
+            destory(node->right);
+            delete node;
+            count--;
+        }
+    };
+
+
 public:
     BST() {
         root = NULL;
@@ -112,7 +151,7 @@ public:
     }
 
     ~BST() {
-
+        destory(root);
     }
 
     int size() {
@@ -141,10 +180,54 @@ public:
     // 如果返回Value，Value是不能为NULL的
     // 如果返回Node*，则Node结构要定义为public，对外暴露，这也不太好基于数据封装原则
     // 找到Key对应的Value的指针，如果Value不存在，这个指针可以存储NULL
-    Value* search(Key key) {
+    Value *search(Key key) {
         return search(root, key);
     }
 
+    /**
+     * 前序遍历
+     */
+    void preOrder() {
+        preOrder(root);
+    }
+
+    /**
+     * 中序遍历
+     */
+    void inOrder() {
+        inOrder(root);
+    }
+
+    /**
+     * 后序遍历
+     */
+    void postOrder() {
+        postOrder(root);
+    }
+
+    /**
+     * 层序遍历(广度优先遍历)
+     * 之前的前序，中序，后序都属于深度优先遍历
+     */
+    void levelOrder() {
+        queue<Node*> q;
+        q.push(root);
+
+        // 只要队列不为空则可以继续
+        while (!q.empty()) {
+            Node* node = q.front() {
+                q.pop();
+
+                cout << node->key << endl;
+
+                if (node->left)
+                    q.push(node->left);
+                if (node->right)
+                    q.push(node->right);
+
+            }
+        }
+    }
 
 
 };

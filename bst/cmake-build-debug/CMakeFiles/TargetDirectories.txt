@@ -1,3 +1,0 @@
-E:/code/publicGithub/baseAlgorithm/bst/cmake-build-debug/CMakeFiles/bst_test.dir
-E:/code/publicGithub/baseAlgorithm/bst/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/code/publicGithub/baseAlgorithm/bst/cmake-build-debug/CMakeFiles/rebuild_cache.dir
