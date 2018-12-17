@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:/code/publicGithub/baseAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/code/publicGithub/baseAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/CMakeFiles/select_sort_test.dir
@@ -9,3 +10,16 @@ D:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/CMakeFiles/rebu
 D:/code/publicGithub/baseAlgorithm/cmake-build-debug/binary_search/CMakeFiles/binary_search_test.dir
 D:/code/publicGithub/baseAlgorithm/cmake-build-debug/binary_search/CMakeFiles/edit_cache.dir
 D:/code/publicGithub/baseAlgorithm/cmake-build-debug/binary_search/CMakeFiles/rebuild_cache.dir
+=======
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/CMakeFiles/select_sort_test.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/CMakeFiles/edit_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/select_sort/CMakeFiles/rebuild_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/CMakeFiles/insert_sort_test.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/CMakeFiles/edit_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/insert_sort/CMakeFiles/rebuild_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/bst/CMakeFiles/bst_test.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/bst/CMakeFiles/edit_cache.dir
+E:/code/publicGithub/baseAlgorithm/cmake-build-debug/bst/CMakeFiles/rebuild_cache.dir
+>>>>>>> 0dcb048b9ea27040d34fd13e4ed73cc5fcfa7184

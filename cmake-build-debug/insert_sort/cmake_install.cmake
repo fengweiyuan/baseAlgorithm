@@ -1,8 +1,8 @@
-# Install script for directory: D:/code/publicGithub/baseAlgorithm/insert_sort
+# Install script for directory: E:/code/publicGithub/baseAlgorithm/insert_sort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/suanfa")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/baseAlgorithm")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

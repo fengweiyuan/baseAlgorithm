@@ -20,7 +20,7 @@ string.h
 stdlib.h
 -
 
-D:/code/publicGithub/baseAlgorithm/select_sort/select_sort.h
+E:/code/publicGithub/baseAlgorithm/select_sort/select_sort.h
 iostream
 -
 algorithm
@@ -28,11 +28,11 @@ algorithm
 string
 -
 
-D:/code/publicGithub/baseAlgorithm/select_sort/select_sort_test.cpp
+E:/code/publicGithub/baseAlgorithm/select_sort/select_sort_test.cpp
 iostream
 -
 sort_test_helper.h
-D:/code/publicGithub/baseAlgorithm/select_sort/sort_test_helper.h
+E:/code/publicGithub/baseAlgorithm/select_sort/sort_test_helper.h
 select_sort.h
-D:/code/publicGithub/baseAlgorithm/select_sort/select_sort.h
+E:/code/publicGithub/baseAlgorithm/select_sort/select_sort.h
 
