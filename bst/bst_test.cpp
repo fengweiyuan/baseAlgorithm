@@ -3,10 +3,11 @@
 using namespace std;
 
 int main() {
-    BST<string,string> bst;
-    bst.insert("mykey","myvalue");
+    BST<int,string> bst;
+    bst.insert(3,"myvalue");
     
-    cout << bst.contain("mykey") << endl;
+//    cout << bst.contain("mykey") << endl;
+    bst.levelOrder();
 //
 //    cout << bst.search("mykey") << endl;
     return 0;

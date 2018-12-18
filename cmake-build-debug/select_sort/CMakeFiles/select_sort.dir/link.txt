@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libselect_sort.a  CMakeFiles/select_sort.dir/select_sort_test.cpp.obj
-C:\MinGW\bin\ranlib.exe libselect_sort.a
